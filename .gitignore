@@ -1,0 +1,9 @@
+*~
+*.swp
+*/spec/fixtures/manifests/site.pp
+.bundle/
+
+# http://viget.com/extend/bundler-best-practices
+# recommends leaving Gemfile.lock in version control,
+# but I plan to use multiple gem combinations
+Gemfile.lock
