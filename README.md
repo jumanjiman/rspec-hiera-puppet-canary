@@ -38,6 +38,8 @@ the rspec-hiera-puppet-canary module.
 
 ### Current status
 
+[![Build Status](https://travis-ci.org/jumanjiman/rspec-hiera-puppet-canary.png?branch=master)](https://travis-ci.org/jumanjiman/rspec-hiera-puppet-canary)
+
 The **canary tests indicate incompatibilities in the code
 between rspec-hiera-puppet and its dependencies**.
 
