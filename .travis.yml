@@ -13,13 +13,14 @@ script:
 
 # http://about.travis-ci.org/docs/user/build-configuration/#Set-environment-variables
 env:
-  - PUPPET_VERSION=3.0.2  RSPEC_HIERA_PUPPET_VERSION=1.0.0
-  - PUPPET_VERSION=2.7.20 RSPEC_HIERA_PUPPET_VERSION=0.3.0
+  - PUPPET_VERSION=3.2.1  HIERA_SPEC_GEM=hiera-puppet-helper HIERA_SPEC_GEM_VERSION=1.0.1
+  - PUPPET_VERSION=3.2.1  HIERA_SPEC_GEM=rspec-hiera-puppet HIERA_SPEC_GEM_VERSION=1.0.0
+  - PUPPET_VERSION=2.7.21 HIERA_SPEC_GEM=rspec-hiera-puppet HIERA_SPEC_GEM_VERSION=0.3.0
 
 matrix:
   allow_failures:
-    - env: 
-      - PUPPET_VERSION=2.7.20
+    - env:
+      - PUPPET_VERSION=2.7.21
 
 # http://about.travis-ci.org/docs/user/notifications/#Email-notifications
 notifications:
