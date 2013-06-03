@@ -1,6 +1,8 @@
+hiera_spec_gem = ENV.key?('HIERA_SPEC_GEM') ? ENV['HIERA_SPEC_GEM'] : 'hiera-puppet-helper'
+
 gems = [
   'rspec-puppet',
-  'rspec-hiera-puppet',
+  hiera_spec_gem,
   'hiera',
 ]
 begin
