@@ -14,6 +14,10 @@ gem "rspec-mocks", "2.12.2"
 
 gem 'puppet', puppet_version
 
+# Code coverage
+# https://coveralls.io/docs/ruby
+gem "coveralls", :require => false
+
 ## Puppet 2.7 does not include hiera.
 if puppet_version =~ /^([^0-9]+)?([^\.]|)2(\..*?)$/
   gem 'hiera'

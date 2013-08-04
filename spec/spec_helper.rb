@@ -1,6 +1,7 @@
 hiera_spec_gem = ENV.key?('HIERA_SPEC_GEM') ? ENV['HIERA_SPEC_GEM'] : 'hiera-puppet-helper'
 
 gems = [
+  'coveralls',
   'rspec-puppet',
   hiera_spec_gem,
   'hiera',
@@ -13,6 +14,9 @@ rescue Exception => e
   puts '=' * e.message.length
   exit(1)
 end
+
+# https://coveralls.io/docs/ruby
+Coveralls.wear!
 
 module Helpers
   class Paths
