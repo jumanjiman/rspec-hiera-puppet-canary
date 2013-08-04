@@ -6,6 +6,7 @@ This minimal module and rspec is a set of canary tests for
 If [rspec-hiera-puppet](https://github.com/amfranz/rspec-hiera-puppet)
 works, then the tests in this module should pass: [![Build Status](https://travis-ci.org/jumanjiman/rspec-hiera-puppet-canary.png?branch=master)](https://travis-ci.org/jumanjiman/rspec-hiera-puppet-canary)
 
+[![Coverage Status](https://coveralls.io/repos/jumanjiman/rspec-hiera-puppet-canary/badge.png?branch=master)](https://coveralls.io/r/jumanjiman/rspec-hiera-puppet-canary?branch=master)
 
 ## Use cases
 
